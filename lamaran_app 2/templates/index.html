@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sawarga Network</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body class="bg-white text-gray-800 ">
+<header>
+  <!-- Navbar -->
+  <nav class="bg-gray-900 text-white px-8 py-4 flex justify-between items-center ">
+    <div class="flex items-center gap-2 ">
+      <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" class="h-8 w-8" />
+      <span class="font-semibold text-lg">Sawarga Network</span>
+    </div>
+    <ul class="flex gap-6 text-sm font-medium">
+      <li><a href="#" class="hover:text-blue-400">Beranda</a></li>
+      <li><a href="#" class="hover:text-blue-400">Tentang Kami</a></li>
+      <li><a href="#" class="hover:text-blue-400">Karir</a></li>
+      <li><a href="#" class="hover:text-blue-400">Kontak</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Section Bergabung -->
+<section class="bg-gradient-to-br from-blue-500 via-blue-700 to-blue-900 text-white py-24 px-6 md:px-16 lg:px-32">
+  <div class="flex flex-col lg:flex-row items-center justify-between gap-16">
+    <!-- Text -->
+<div class="lg:w-1/2 space-y-8">
+  <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">
+    Bergabunglah<br />Dengan Tim Kami
+  </h1>
+  <p class="text-lg text-blue-100">
+    Kami mencari talenta-talenta terbaik untuk mengisi posisi strategis di perusahaan kami. 
+    Jadilah bagian dari pertumbuhan PT Bentang Johar Awal!
+  </p>
+  <div class="flex gap-6 pt-2">
+    <a href="login.html">
+      <button class="group flex items-center gap-2 border border-white px-6 py-3 rounded-lg font-semibold text-white hover:bg-white hover:text-blue-800 transition duration-300 shadow-md">
+        <i class="fa-solid fa-right-to-bracket group-hover:rotate-[-5deg] transition duration-300"></i>
+        Login
+      </button>
+    </a>
+    <a href="register.html">
+      <button class="group flex items-center gap-2 border border-white px-6 py-3 rounded-lg font-semibold text-white hover:bg-white hover:text-blue-800 transition duration-300 shadow-md">
+        <i class="fa-solid fa-user-plus group-hover:rotate-[5deg] transition duration-300"></i>
+        Registrasi
+      </button>
+    </a>
+  </div>
+</div>
+
+
+    <!-- Icon Globe -->
+    <div class="lg:w-1/3 flex justify-center items-center">
+      <i class="fa-solid fa-globe text-white text-[20rem]"></i>
+    </div>
+  </div>
+</section>
+
+<!-- Section Keunggulan & Rekrutmen -->
+<section class="bg-white text-gray-900 py-20 px-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start justify-items-center">
+      
+      <!-- Keunggulan -->
+      <div class="w-full">
+        <h2 class="text-2xl font-bold mb-6">Kenapa Bergabung Dengan Kami?</h2>
+        <ul class="space-y-6 text-base">
+          <li class="flex items-start gap-4">
+            <span class="flex items-center justify-center w-6 h-6 mt-1 bg-blue-900 rounded">
+              <i class="fa-solid fa-check text-white text-sm"></i>
+            </span>
+            <div>
+              <strong>Lingkungan Kerja Dinamis</strong><br>
+              Kami menawarkan lingkungan kerja yang kolaboratif dan mendukung pengembangan karir.
+            </div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="flex items-center justify-center w-6 h-6 mt-1 bg-blue-900 rounded">
+              <i class="fa-solid fa-check text-white text-sm"></i>
+            </span>
+            <div>
+              <strong>Paket Kompensasi Kompetitif</strong><br>
+              Gaji, tunjangan, dan bonus yang menarik sesuai dengan kinerja dan kontribusi.
+            </div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="flex items-center justify-center w-6 h-6 mt-1 bg-blue-900 rounded">
+              <i class="fa-solid fa-check text-white text-sm"></i>
+            </span>
+            <div>
+              <strong>Pelatihan Berkala</strong><br>
+              Program pelatihan dan pengembangan untuk terus meningkatkan kompetensi karyawan.
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Proses Rekrutmen -->
+      <div class="w-full flex flex-col justify-center items-center text-center">
+        <h2 class="text-2xl font-bold mb-6">Proses Rekrutmen</h2>
+        <ul class="space-y-8 text-base text-gray-800">
+          <li class="flex items-center gap-4">
+            <i class="fa-solid fa-user text-gray-800 w-6 h-6"></i>
+            <span>Lamar Pekerjaan</span>
+          </li>
+          <li class="flex items-center gap-4">
+            <i class="fa-solid fa-clipboard-list text-gray-800 w-6 h-6"></i>
+            <span>Seleksi Administrasi</span>
+          </li>
+          <li class="flex items-center gap-4">
+            <i class="fa-solid fa-comments text-gray-800 w-6 h-6"></i>
+            <span>Wawancara</span>
+          </li>
+          <li class="flex items-center gap-4">
+            <i class="fa-solid fa-location-dot text-gray-800 w-6 h-6"></i>
+            <span>Penempatan</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- LOKER YANG TERSEDIA -->
+<section>
+  <div class="text-center">
+    <h1 class="text-4xl font-extrabold text-gray-900">LOKER YANG TERSEDIA</h1>
+    <p class="text-gray-600 mt-6">Kami membuka lowongan untuk 4 divisi utama. Silakan pilih posisi yang sesuai dengan keahlian dan minat Anda.</p>
+  </div>
+
+  <div class="flex justify-center">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 px-4 mb-16 mt-12 max-w-[900px]">
+
+      <!-- Teknisi Jaringan -->
+      <div class="bg-white border rounded-2xl shadow-md hover:shadow-xl transition-all p-12 text-gray-800 max-w-md text-center">
+        <div class="text-purple-800 text-6xl mb-4 text-center">
+          <i class="fa-solid fa-gears"></i>
+        </div>
+        <h2 class="text-xl font-semibold mb-2">Teknisi Jaringan</h2>
+        <p class="text-gray-600 mb-4">Bertugas instalasi dan pemeliharaan jaringan.</p>
+        <div class="flex justify-center gap-4">
+          <button onclick="toggleDetail('teknisi-detail')" class="text-blue-600 underline">Detail</button>
+        </div>
+        <div id="teknisi-detail" class="hidden mt-6 text-sm text-gray-700 leading-relaxed text-left">
+          <p>
+            Bertanggung jawab atas pemasangan, konfigurasi, pemeliharaan, dan perbaikan infrastruktur jaringan di seluruh area operasional perusahaan. <br><br>
+            Teknisi harus mampu menangani berbagai permasalahan jaringan (LAN, WAN, Router, Switch) secara onsite maupun remote, serta memastikan kestabilan konektivitas untuk mendukung aktivitas operasional harian. <br><br>
+            Pengalaman dalam instalasi kabel, konfigurasi perangkat jaringan, dan penanganan gangguan teknis sangat diutamakan.
+          </p>
+        </div>
+      </div>
+
+      <!-- NOC -->
+      <div class="bg-white border rounded-2xl shadow-md hover:shadow-xl transition-all p-12 text-gray-800 max-w-md text-center">
+        <div class="text-purple-800 text-6xl mb-4 text-center">
+          <i class="fa-solid fa-wifi"></i>
+        </div>
+        <h2 class="text-xl font-semibold mb-2">Network Operation Center</h2>
+        <p class="text-gray-600 mb-4">Pantau dan tangani jaringan secara real-time.</p>
+        <div class="flex justify-center gap-4">
+          <button onclick="toggleDetail('noc-detail')" class="text-blue-600 underline">Detail</button>
+        </div>
+        <div id="noc-detail" class="hidden mt-6 text-sm text-gray-700 leading-relaxed text-left">
+          <p>
+            Bertugas memantau dan mengelola performa jaringan secara real-time melalui sistem monitoring 24/7. <br><br>
+            Tim NOC bertanggung jawab mendeteksi, menganalisis, dan menanggapi insiden jaringan dengan cepat, termasuk mengoordinasikan eskalasi ke teknisi lapangan jika diperlukan. <br><br>
+            Posisi ini juga mengharuskan kandidat memiliki kemampuan troubleshooting, dokumentasi insiden, serta komunikasi efektif dalam menyampaikan laporan status jaringan kepada tim terkait.
+          </p>
+        </div>
+      </div>
+
+      <!-- Customer Service -->
+      <div class="bg-white border rounded-2xl shadow-md hover:shadow-xl transition-all p-12 text-gray-800 max-w-md">
+        <div class="text-center">
+          <div class="text-purple-800 text-6xl mb-4">
+            <i class="fa-solid fa-users"></i>
+          </div>
+          <h2 class="text-2xl font-bold mb-2">Customer Service</h2>
+          <p class="text-gray-600 mb-6">Berinteraksi dan bantu pelanggan.</p>
+        </div>
+        <div class="flex justify-center gap-6 mb-4">
+          <button onclick="toggleDetail('cs-detail')" class="text-blue-700 font-medium underline hover:text-blue-900 transition">Detail</button>
+        </div>
+        <div id="cs-detail" class="hidden mt-6 text-sm text-gray-700 leading-relaxed text-left">
+          <p>
+            Berperan sebagai garda terdepan dalam memberikan pelayanan kepada pelanggan, baik melalui telepon, email, maupun media sosial. <br><br>
+            Tugas utama mencakup menangani pertanyaan, keluhan, permintaan informasi, serta memastikan pelanggan mendapatkan solusi yang cepat dan memuaskan. <br><br>
+            Dibutuhkan kemampuan komunikasi yang baik, empati, kesabaran, serta keterampilan multitasking dan penggunaan tools CRM (Customer Relationship Management).
+          </p>
+        </div>
+      </div>
+
+      <!-- Accounting -->
+      <div class="bg-white border rounded-2xl shadow-md hover:shadow-xl transition-all p-12 text-gray-800 max-w-md">
+        <div class="text-center">
+          <div class="text-purple-800 text-6xl mb-4">
+            <i class="fa-solid fa-calculator"></i>
+          </div>
+          <h2 class="text-2xl font-bold mb-2">Accounting</h2>
+          <p class="text-gray-600 mb-6">Kelola keuangan dan laporan perusahaan.</p>
+        </div>
+        <div class="flex justify-center gap-6 mb-4">
+          <button onclick="toggleDetail('accounting-detail')" class="text-blue-700 font-medium underline hover:text-blue-900 transition">Detail</button>
+        </div>
+        <div id="accounting-detail" class="hidden mt-6 text-sm text-gray-700 leading-relaxed text-left">
+          <p>
+            Bertanggung jawab atas penyusunan laporan keuangan, pembukuan harian, pengelolaan transaksi keuangan, serta pelaporan pajak secara akurat dan tepat waktu. <br><br>
+            Posisi ini juga melibatkan audit internal, rekonsiliasi bank, dan analisis data keuangan untuk mendukung pengambilan keputusan manajerial. <br><br>
+            Dibutuhkan ketelitian tinggi, pemahaman akuntansi yang kuat, serta penguasaan software akuntansi seperti Accurate, MYOB, atau lainnya.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  function toggleDetail(id) {
+    document.getElementById(id).classList.toggle('hidden');
+  }
+</script>
+
+</script>
+<footer class="bg-gray-900 text-gray-300 py-6">
+  <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+
+    <!-- Alamat (kanan) -->
+    <div class="space-y-1 order-1 md:order-3">
+      <h3 class="text-lg font-semibold mb-2">Alamat</h3>
+      <p class="text-sm">Jl. Sawahbera No.34, RT.02/RW.15, Dayeuhluhur,</p>
+      <p class="text-sm">Kec. Warudoyong, Kota Sukabumi, Jawa Barat 43134</p>
+    </div>
+
+    <!-- Kontak Kami (tengah) -->
+    <div class="space-y-1 order-2 md:order-2">
+      <h3 class="text-lg font-semibold mb-2">Kontak Kami</h3>
+      <div class="flex items-center gap-2 text-sm">
+        <i class="fa-solid fa-envelope text-blue-500"></i>
+        <a href="mailto:info@sawarga.net" class="hover:text-white transition">info@sawarga.net</a>
+      </div>
+      <div class="flex items-center gap-2 text-sm">
+        <i class="fa-solid fa-phone text-blue-500"></i>
+        <a href="tel:085659404444" class="hover:text-white transition">0856-5940-4444</a>
+      </div>
+    </div>
+
+    <!-- Sosial Media (kiri) -->
+    <div class="space-y-1 order-3 md:order-1">
+      <h3 class="text-lg font-semibold mb-2">Sosial Media</h3>
+      <div class="flex gap-4 text-blue-500 text-sm">
+        <a href="#" class="hover:text-white transition" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-white transition" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="hover:text-white transition" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="hover:text-white transition" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="max-w-6xl mx-auto px-6 mt-6 border-t border-gray-700 pt-3 text-center text-gray-500 text-xs">
+    &copy; 2025 Sawarga Network. All rights reserved.
+  </div>
+</footer>
+
+
+</body>
+</html>

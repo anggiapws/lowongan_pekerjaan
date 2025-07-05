@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard Admin</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 min-h-screen flex">
+
+  <!-- Sidebar -->
+<!-- Sidebar -->
+  <aside class="w-64 bg-gray-900 text-white min-h-screen p-6 space-y-6">
+    <h2 class="text-2xl font-bold">Admin Panel</h2>
+    <nav class="space-y-4">
+      <a href="{{ url_for('admin_dashboard') }}" class="block hover:text-gray-300">🏠 Dashboard</a>
+      <a href="{{ url_for('tambah_lowongan') }}" class="block hover:text-gray-300">➕ Tambah Lowongan</a>
+      <a href="{{ url_for('admin_statistik') }}" class="block hover:text-gray-300">📊 Statistik Pelamar</a>
+      <a href="{{ url_for('admin_laporan') }}" class="block hover:text-gray-300">📈 Laporan Analisa</a>
+      <a href="{{ url_for('logout') }}" class="block text-red-200 hover:text-white">🚪 Logout</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="flex-1 p-8">
+    <h1 class="text-3xl font-bold mb-6">Dashboard</h1>
+
+    <!-- Statistik Ringkasan -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+      <div class="bg-white p-6 rounded shadow">
+        <h2 class="text-xl font-semibold">Jumlah Pelamar</h2>
+        <p class="text-3xl font-bold text-gray-900 mt-2">124</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow">
+        <h2 class="text-xl font-semibold">Jumlah Lowongan</h2>
+        <p class="text-3xl font-bold text-gray-900 mt-2">7</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow">
+        <h2 class="text-xl font-semibold">Direkomendasikan</h2>
+        <p class="text-3xl font-bold text-gray-900 mt-2">18</p>
+      </div>
+    </div>
+
+    <!-- Aktivitas Terbaru -->
+    <div class="bg-white p-6 rounded shadow mb-6">
+      <h2 class="text-xl font-semibold mb-4">Aktivitas Terbaru</h2>
+      <ul class="list-disc list-inside space-y-2 text-gray-700">
+        <li>Pelamar <strong>Andi Saputra</strong> melamar posisi <em>Teknisi IT</em>.</li>
+        <li>Lowongan <strong>NOC Engineer</strong> ditambahkan oleh admin.</li>
+        <li>Pelamar <strong>Sri Wulandari</strong> direkomendasikan untuk <em>Customer Service</em>.</li>
+      </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-sm text-center text-gray-500 mt-12">
+      &copy; 2025 Portal Rekrutmen | Admin Dashboard
+    </footer>
+  </main>
+</body>
+</html>
